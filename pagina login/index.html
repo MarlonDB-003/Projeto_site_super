@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+
+        <div class="content">
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="POST" action="salvar.php">
+                    <h1>Login</h1>
+                    <p>
+                        <label for="login">Seu Login</label>
+                        <input id="login_user" name="login_user" required="required" type="text" placeholder="Login" />
+                    </p>
+
+                    <p>
+                        <label for="senha_login">Sua senha</label>
+                        <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" />
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Logar" />
+                    </p>
+
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="POST" action="salvar.php">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome">Seu nome</label>
+                        <input id="nome" name="nome" required="required" type="text" placeholder="Nome" />
+                    </p>
+
+                    <p>
+                        <label for="email_user">Seu e-mail</label>
+                        <input id="email_user" name="email_user" required="required" type="email" placeholder="contato@htmlecsspro.com" />
+                    </p>
+
+                    <p>
+                        <label for="siap_user">Seu SIAP</label>
+                        <input id="siap_user" name="siap_user" required="required" type="text" placeholder="SIAP" />
+                    </p>
+
+                    <p>
+                        <label for="area_user">Sua Área de Atuação</label>
+                        <input id="area_user  " name="area_user" required="required" type="text" placeholder="Área de Atuação" />
+                    </p>
+
+                    <p>
+                        <label for="tipo_user">Tipo de Contrato</label>
+                        <input id="tipo_user" name="tipo_user" required="required" type="text" placeholder="Tipo de Contrato" />
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Cadastrar" />
+                    </p>
+
+                    <p class="link">
+                        Já tem conta?
+                        <a href="#paralogin"> Ir para Login </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
